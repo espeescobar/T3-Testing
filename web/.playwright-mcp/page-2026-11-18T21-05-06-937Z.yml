@@ -1,0 +1,35 @@
+- generic:
+  - generic:
+    - generic:
+      - region "Notifications alt+T"
+      - navigation [aria-hidden]:
+        - generic:
+          - list:
+            - listitem:
+              - link:
+                - /url: /quotes
+                - text: Frases
+            - listitem:
+              - link:
+                - /url: /
+                - text: Frase diaria
+            - listitem:
+              - button: Nueva frase
+      - generic [aria-hidden]:
+        - heading [level=1]: Life is like riding a bicycle. To keep your balance you must keep moving.
+        - paragraph: "- Albert Einstein"
+        - generic:
+          - generic: science
+          - generic: inspiration
+          - generic: life
+          - generic: moustache
+          - button [expanded]
+  - dialog [ref=f1e123]:
+    - generic [ref=f1e124]:
+      - heading "Nuevas etiquetas para la frase" [level=2] [ref=f1e125]
+      - paragraph [ref=f1e126]: Por favor, ingresa la(s) etiqueta(s).
+      - textbox "chile, humor, tv" [active] [ref=f1e128]
+    - generic [ref=f1e129]:
+      - button "Cancelar" [ref=f1e130]
+      - button "Agregar etiquetas" [ref=f1e131]
+    - button "Close" [ref=f1e132]

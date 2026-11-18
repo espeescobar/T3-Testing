@@ -1,0 +1,50 @@
+- generic:
+  - generic:
+    - generic:
+      - region "Notifications alt+T"
+      - navigation [aria-hidden]:
+        - generic:
+          - list:
+            - listitem:
+              - link:
+                - /url: /quotes
+                - text: Frases
+            - listitem:
+              - link:
+                - /url: /
+                - text: Frase diaria
+            - listitem:
+              - button [expanded]: Nueva frase
+      - generic [aria-hidden]:
+        - heading [level=1]: If I have seen further it is by standing on the shoulders of Giants.
+        - paragraph: "- Isaac Newton"
+        - generic:
+          - generic: science
+          - generic: inspiration
+          - generic: no moustache
+          - button
+  - dialog [ref=e123]:
+    - generic [ref=e124]:
+      - heading "Nueva frase" [level=2] [ref=e125]
+      - paragraph [ref=e126]: Añade una nueva frase a la colección. No olvides buscarla bien antes de crear una nueva.
+    - generic [ref=e127]:
+      - generic [ref=e128]:
+        - generic [ref=e129]: Frase
+        - textbox "Frase" [active] [ref=e130]:
+          - /placeholder: No soy un pesimista Tulio, solo soy un optimista bien informado.
+      - generic [ref=e131]:
+        - generic [ref=e132]: Personaje
+        - combobox [ref=e133]:
+          - generic [ref=e134]: Selecciona o crea un personaje
+      - generic [ref=e135]:
+        - generic [ref=e136]: Fuente
+        - textbox "Fuente" [ref=e137]:
+          - /placeholder: 31 Minutos
+      - generic [ref=e138]:
+        - generic [ref=e139]: Etiquetas
+        - textbox "Etiquetas" [ref=e140]:
+          - /placeholder: chile, humor, tv
+    - generic [ref=e141]:
+      - button "Cancelar" [ref=e142]
+      - button "Añadir" [ref=e143]
+    - button "Close" [ref=e144]

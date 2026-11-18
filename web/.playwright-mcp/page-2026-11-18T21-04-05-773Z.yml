@@ -1,0 +1,108 @@
+- generic [ref=e3]:
+  - region "Notifications alt+T"
+  - navigation "Main" [ref=e4]:
+    - list [ref=e6]:
+      - listitem [ref=e7]:
+        - link "Frases" [active] [ref=e8] [cursor=pointer]:
+          - /url: /quotes
+      - listitem [ref=e9]:
+        - link "Frase diaria" [ref=e10] [cursor=pointer]:
+          - /url: /
+      - listitem [ref=e11]:
+        - button "Nueva frase" [ref=e12]
+  - generic [ref=e22]:
+    - generic [ref=e23]:
+      - textbox "Buscar frases..." [ref=e24]
+      - combobox [ref=e25]:
+        - generic [ref=e26]: Selecciona un personaje
+      - generic [ref=e27]:
+        - switch [ref=e28]
+        - generic [ref=e29]: Psycho Killer Mode
+    - generic [ref=e30]:
+      - generic [ref=e31] [cursor=pointer]:
+        - generic [ref=e32]:
+          - generic [ref=e33]: Life is like riding a bicycle. To keep your balance you must keep moving.
+          - generic [ref=e34]: "- Albert Einstein"
+        - generic [ref=e36]:
+          - generic [ref=e37]: science
+          - generic [ref=e38]: inspiration
+          - generic [ref=e39]: life
+          - generic [ref=e40]: moustache
+      - generic [ref=e41] [cursor=pointer]:
+        - generic [ref=e42]:
+          - generic [ref=e43]: If I have seen further it is by standing on the shoulders of Giants.
+          - generic [ref=e44]: "- Isaac Newton"
+        - generic [ref=e46]:
+          - generic [ref=e47]: science
+          - generic [ref=e48]: inspiration
+          - generic [ref=e49]: no moustache
+      - generic [ref=e50] [cursor=pointer]:
+        - generic [ref=e51]:
+          - generic [ref=e52]: Nothing in life is to be feared, it is only to be understood.
+          - generic [ref=e53]: "- Marie Curie"
+        - generic [ref=e55]:
+          - generic [ref=e56]: science
+          - generic [ref=e57]: inspiration
+          - generic [ref=e58]: life
+          - generic [ref=e59]: no moustache
+      - generic [ref=e60] [cursor=pointer]:
+        - generic [ref=e61]:
+          - generic [ref=e62]: Do what you can, with what you have, where you are.
+          - generic [ref=e63]: "- Theodore Roosevelt"
+        - generic [ref=e65]:
+          - generic [ref=e66]: inspiration
+          - generic [ref=e67]: life
+          - generic [ref=e68]: moustache
+      - generic [ref=e69] [cursor=pointer]:
+        - generic [ref=e70]:
+          - generic [ref=e71]: All we have to decide is what to do with the time that is given us.
+          - generic [ref=e72]:
+            - generic [ref=e73]: "- Gandalf"
+            - generic [ref=e74]: Lord of the Rings
+        - generic [ref=e75]:
+          - generic [ref=e76]: inspiration
+          - generic [ref=e77]: life
+          - generic [ref=e78]: fantasy
+      - generic [ref=e79] [cursor=pointer]:
+        - generic [ref=e80]:
+          - generic [ref=e81]: In the end, they will kill us. But first, they shall fear us!
+          - generic [ref=e82]:
+            - generic [ref=e83]: "- Elend Venture"
+            - generic [ref=e84]: Mistborn
+        - generic [ref=e85]:
+          - generic [ref=e86]: inspiration
+          - generic [ref=e87]: life
+          - generic [ref=e88]: fantasy
+      - generic [ref=e89] [cursor=pointer]:
+        - generic [ref=e90]:
+          - generic [ref=e91]: Our belief is often strongest when it should be weakest. That is the nature of hope.
+          - generic [ref=e92]:
+            - generic [ref=e93]: "- Sazed"
+            - generic [ref=e94]: Mistborn
+        - generic [ref=e95]:
+          - generic [ref=e96]: inspiration
+          - generic [ref=e97]: life
+          - generic [ref=e98]: fantasy
+          - generic [ref=e99]: wisdom
+      - generic [ref=e100] [cursor=pointer]:
+        - generic [ref=e101]:
+          - generic [ref=e102]: Life happens wherever you are, whether you make it or not.
+          - generic [ref=e103]:
+            - generic [ref=e104]: "- Uncle Iroh"
+            - generic [ref=e105]: "Avatar: The Last Airbender"
+        - generic [ref=e106]:
+          - generic [ref=e107]: inspiration
+          - generic [ref=e108]: life
+          - generic [ref=e109]: fantasy
+          - generic [ref=e110]: wisdom
+      - generic [ref=e111] [cursor=pointer]:
+        - generic [ref=e112]:
+          - generic [ref=e113]: Sometimes the best way to solve your own problems is to help someone else.
+          - generic [ref=e114]:
+            - generic [ref=e115]: "- Uncle Iroh"
+            - generic [ref=e116]: "Avatar: The Last Airbender"
+        - generic [ref=e117]:
+          - generic [ref=e118]: inspiration
+          - generic [ref=e119]: life
+          - generic [ref=e120]: fantasy
+          - generic [ref=e121]: wisdom
