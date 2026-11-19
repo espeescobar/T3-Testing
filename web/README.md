@@ -148,3 +148,23 @@ npx playwright show-report
 ```
 
 Puede ver más comandos en https://playwright.dev/docs/intro
+
+## Notas de la entrega
+
+### API testing
+- Coverage: 99% (80 tests). La única línea sin cubrir es la 445 de `src/app.py`
+  (`app.run(debug=True)` bajo `if __name__ == "__main__"`), que solo se ejecuta al correr
+  el archivo directamente y no al importarlo desde pytest, por lo que no es alcanzable con tests.
+- Tests unitarios en `api/tests/unit/` y 6 flujos de integración en `api/tests/integration/`
+  (cada flujo usa 3 o más endpoints distintos).
+- El warning `Module scripts was never imported` viene del `--cov=scripts` de `pytest.ini`
+  y es inofensivo.
+
+### E2E (Playwright)
+- 10 tests: 4 `@manual` y 6 `@ia` + `@copilot` (generados con los agentes de Playwright
+  en VS Code con GitHub Copilot).
+- Los tests de IA se refinaron a mano: tag de origen, locators más estables y limpieza de datos vía API.
+- `bug: filtrar por personaje ignora el texto de búsqueda` falla a propósito: al elegir un personaje
+  se ignora el texto escrito en el buscador (`QuotesGrid.tsx`).
+- Los tests que crean datos usan textos únicos (`Date.now()`) y borran lo creado en `finally`.
+- Planes: `web/tests/plan-planner.md` (sin modificar) y `web/tests/plan-final.md` (refinado).

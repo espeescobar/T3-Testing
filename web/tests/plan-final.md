@@ -7,7 +7,7 @@ Seis flujos de usuario priorizados, no redundantes con los tests manuales
 Reglas comunes: textos y nombres únicos por test (corren en paralelo), no asumir
 cantidad exacta de tarjetas (otros tests crean datos), y limpiar todo lo creado
 vía API (DELETE /quotes/delete/<id>, /characters/delete/<id>, /tags/delete/<id>).
-Datos seed: "Albert Einstein" (frase con "bicycle") y "Uncle Iroh" (2 frases).
+Datos seed: "Isaac Newton" (frase con "shoulders"), "Marie Curie" y "Elend Venture" (1 frase).
 
 ## Test Scenarios
 
@@ -34,22 +34,22 @@ Datos seed: "Albert Einstein" (frase con "bicycle") y "Uncle Iroh" (2 frases).
 **File:** `tests/collection.spec.ts`
 
 **Steps:**
-  1. Abrir /quotes y escribir "bicycle" en "Buscar frases...".
-    - expect: La frase de Albert Einstein ("Life is like riding a bicycle") queda visible.
+  1. Abrir /quotes y escribir "shoulders" en "Buscar frases...".
+    - expect: La frase de Isaac Newton ("If I have seen further it is by standing on the shoulders of Giants.") queda visible.
     - expect: La frase "Nothing in life is to be feared" deja de verse.
   2. Borrar el texto del campo.
     - expect: Ambas frases vuelven a estar visibles.
 
 #### 2.2. Filtrar por personaje y volver a "Todos"
 
-**File:** `tests/collection.spec.ts`
+**File:** `tests/filter-character.spec.ts`
 
 **Steps:**
-  1. Abrir /quotes, abrir el combobox y elegir "Uncle Iroh".
-    - expect: Se ven las 2 frases de Uncle Iroh.
-    - expect: La frase de Einstein no se ve.
+  1. Abrir /quotes, abrir el combobox y elegir "Elend Venture".
+    - expect: Se ve la frase de Elend Venture ("In the end, they will kill us...").
+    - expect: La frase de Theodore Roosevelt ("Do what you can...") no se ve.
   2. Abrir el combobox y elegir "Todos".
-    - expect: La frase de Einstein vuelve a estar visible.
+    - expect: La frase de Theodore Roosevelt vuelve a estar visible.
 
 ### 3. Creación de frases
 

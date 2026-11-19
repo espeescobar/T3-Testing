@@ -1,0 +1,51 @@
+- generic:
+  - generic:
+    - generic:
+      - region "Notifications alt+T"
+      - navigation [aria-hidden]:
+        - generic:
+          - list:
+            - listitem:
+              - link:
+                - /url: /quotes
+                - text: Frases
+            - listitem:
+              - link:
+                - /url: /
+                - text: Frase diaria
+            - listitem:
+              - button [expanded]: Nueva frase
+      - generic [aria-hidden]:
+        - heading [level=1]: Sometimes the best way to solve your own problems is to help someone else.
+        - paragraph: "- Uncle Iroh (Avatar: The Last Airbender)"
+        - generic:
+          - generic: inspiration
+          - generic: life
+          - generic: fantasy
+          - generic: wisdom
+          - button
+  - dialog [ref=f2e23]:
+    - generic [ref=f2e24]:
+      - heading "Nueva frase" [level=2] [ref=f2e25]
+      - paragraph [ref=f2e26]: Añade una nueva frase a la colección. No olvides buscarla bien antes de crear una nueva.
+    - generic [ref=f2e27]:
+      - generic [ref=f2e28]:
+        - generic [ref=f2e29]: Frase
+        - textbox "Frase" [active] [ref=f2e30]:
+          - /placeholder: No soy un pesimista Tulio, solo soy un optimista bien informado.
+      - generic [ref=f2e31]:
+        - generic [ref=f2e32]: Personaje
+        - combobox [ref=f2e33]:
+          - generic [ref=f2e34]: Selecciona o crea un personaje
+      - generic [ref=f2e35]:
+        - generic [ref=f2e36]: Fuente
+        - textbox "Fuente" [ref=f2e37]:
+          - /placeholder: 31 Minutos
+      - generic [ref=f2e38]:
+        - generic [ref=f2e39]: Etiquetas
+        - textbox "Etiquetas" [ref=f2e40]:
+          - /placeholder: chile, humor, tv
+    - generic [ref=f2e41]:
+      - button "Cancelar" [ref=f2e42]
+      - button "Añadir" [ref=f2e43]
+    - button "Close" [ref=f2e44]
